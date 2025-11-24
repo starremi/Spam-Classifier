@@ -55,7 +55,7 @@ It demonstrates full-stack concepts:
 git clone https://github.com/<your-username>/spam-classifier.git
 cd spam-classifier
 
-### 2️⃣ Set up and train the ML model Clone the repository
+### 2️⃣ Train the ML Model + Run the API
 
 ```bash
 cd ml-core
