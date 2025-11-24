@@ -55,7 +55,7 @@ It demonstrates full-stack concepts:
 git clone https://github.com/<your-username>/spam-classifier.git
 cd spam-classifier
 
-## 2️⃣ Set up and train the ML model
+### 2️⃣ Set up and train the ML model Clone the repository
 
 ```bash
 cd ml-core
@@ -65,16 +65,16 @@ pip install -r requirements.txt
 python3 train.py
 uvicorn api:app --reload --port 8000
 
-## 3️⃣ Run the web UI
+### 3️⃣ Run the web UI
 ```bash
 Open web-ui/index.html
 
-## 4️⃣ Run the Java Client
+### 4️⃣ Run the Java Client
 ```bash
 cd java-client
 ./gradlew run --args="Hello friend"
 
-## 5️⃣ Run the C++ Client
+### 5️⃣ Run the C++ Client
 ```bash
 Use Clion or other C++ application : 
 cd cpp-client
@@ -83,7 +83,7 @@ cmake ..
 make
 ./cpp-client "your message"
 
-## API Request
+### API Request
 ```bash
 POST http://localhost:8000/predict
 {"message": "Win a free iPhone today!"}
