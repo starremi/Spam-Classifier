@@ -55,12 +55,5 @@ It demonstrates full-stack concepts:
 git clone https://github.com/<your-username>/spam-classifier.git
 cd spam-classifier
 
-### 2️⃣ Train the ML Model + Run the API
-cd ml-core
-python3 -m venv .venv
-source .venv/bin/activate 
-pip install -r requirements.txt
-python3 train.py
-uvicorn api:app --reload --port 8000
 
 
