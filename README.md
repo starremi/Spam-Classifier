@@ -33,12 +33,12 @@ It demonstrates full-stack concepts:
 
 ---
 
-## 🧩 Architecture
+## Architecture
 - Web UI → FastAPI → ML Model (TF-IDF + Naive Bayes)  
 - Java Client → FastAPI API  
 - C++ Client → FastAPI API
 
-## 📊 Machine Learning Model
+## Machine Learning Model
 
 - **Algorithm:** Multinomial Naive Bayes  
 - **Feature Extraction:** TF-IDF Vectorizer  
@@ -48,11 +48,19 @@ It demonstrates full-stack concepts:
 
 ---
 
-## 🧮 Setup Instructions
+## Setup Instructions
 
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/<your-username>/spam-classifier.git
 cd spam-classifier
+
+### 2️⃣ Train the ML Model + Run the API
+cd ml-core
+python3 -m venv .venv
+source .venv/bin/activate 
+pip install -r requirements.txt
+python3 train.py
+uvicorn api:app --reload --port 8000
 
 
