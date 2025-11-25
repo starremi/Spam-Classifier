@@ -50,32 +50,27 @@ It demonstrates full-stack concepts:
 
 ## Setup Instructions
 
-## 1️⃣ Clone the repository
-
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/<your-username>/spam-classifier.git
 cd spam-classifier
-2️⃣ Set up the ML environment
-bash
-Copy code
+
+2️⃣ Train the ML Model + Run the API
 cd ml-core
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate 
 pip install -r requirements.txt
 python3 train.py
 uvicorn api:app --reload --port 8000
+
 3️⃣ Run the Web UI
-bash
-Copy code
 open web-ui/index.html
 
 ### 4️⃣ Run the Java Client
-```bash
 cd java-client
 ./gradlew run --args="Hello friend"
 
 ### 5️⃣ Run the C++ Client
-```bash
 Use Clion or other C++ application : 
 cd cpp-client
 mkdir build && cd build
@@ -84,7 +79,6 @@ make
 ./cpp-client "your message"
 
 ### API Request
-```bash
 POST http://localhost:8000/predict
 {"message": "Win a free iPhone today!"}
 
