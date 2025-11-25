@@ -67,11 +67,11 @@ uvicorn api:app --reload --port 8000
 3️⃣ Run the Web UI
 open web-ui/index.html
 
-### 4️⃣ Run the Java Client
+4️⃣ Run the Java Client
 cd java-client
 ./gradlew run --args="Hello friend"
 
-### 5️⃣ Run the C++ Client
+5️⃣ Run the C++ Client
 Use Clion or other C++ application : 
 cd cpp-client
 mkdir build && cd build
@@ -79,7 +79,7 @@ cmake ..
 make
 ./cpp-client "your message"
 
-### API Request
+API Request
 POST http://localhost:8000/predict
 {"message": "Win a free iPhone today!"}
 
