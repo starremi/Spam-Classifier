@@ -50,6 +50,7 @@ It demonstrates full-stack concepts:
 
 ## Setup Instructions
 
+
 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/<your-username>/spam-classifier.git
@@ -84,6 +85,3 @@ POST http://localhost:8000/predict
 
 Response :
 {"label": "spam", "score": 0.984}
-
-
-
